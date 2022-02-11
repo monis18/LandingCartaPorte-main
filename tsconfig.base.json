@@ -1,0 +1,85 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@crud": [
+        "app/core/_base/crud"
+      ],
+      "@utils": [
+        "app/core/_base/crud/utils"
+      ],
+      "@layout": [
+        "app/core/_base/layout"
+      ],
+      "@shared/*": [
+        "app/views/shared/*"
+      ],
+      "@environments/*": [
+        "environments/*"
+      ],
+      "@auth/*": [
+        "app/core/auth/*"
+      ],
+      "@actions/*": [
+        "app/core/actions/*"
+      ],
+      "@effects/*": [
+        "app/core/effects/*"
+      ],
+      "@enums/*": [
+        "app/core/enums/*"
+      ],
+      "@guards/*": [
+        "app/core/guards/*"
+      ],
+      "@interfaces/*": [
+        "app/core/interfaces/*"
+      ],
+      "@models/*": [
+        "app/core/models/*"
+      ],
+      "@complementos/*": [
+        "app/core/models/invoice/complementos/*"
+      ],
+      "@addendas/*": [
+        "app/core/models/invoice/addendas/*"
+      ],
+      "@reducers/*": [
+        "app/core/reducers/*"
+      ],
+      "@selectors/*": [
+        "app/core/selectors/*"
+      ],
+      "@server/*": [
+        "app/core/server/*"
+      ],
+      "@services": [
+        "app/core/services"
+      ],
+      "@app-state": [
+        "app/core/reducers/index"
+      ],
+      "@autocompletes": [
+        "app/views/shared/autocompletes"
+      ],
+    },
+  }
+}

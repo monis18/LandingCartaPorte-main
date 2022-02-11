@@ -1,0 +1,274 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "4b2eb253-c39d-432e-89f4-3c0efbaae8e5"
+  },
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "visoor": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "kt",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "aot": true,
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/.htaccess",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ng2-pdfjs-viewer/pdfjs",
+                "output": "/assets/pdfjs"
+              }
+            ],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/plugins/line-awesome/css/line-awesome.css",
+              "src/assets/plugins/flaticon/flaticon.css",
+              "src/assets/plugins/flaticon2/flaticon.css",
+              "src/assets/sass/style.angular.scss"
+            ],
+            "scripts": [
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/tooltip.js/dist/umd/tooltip.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets"
+              ]
+            },
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/app/build-specifics/index.ts",
+                  "with": "src/app/build-specifics/index.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/profile.service.ts",
+                  "with": "src/app/core/services.prod/profile.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/auth/services/authentication.service.ts",
+                  "with": "src/app/core/auth/services/authentication.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/invoice-edit.service.ts",
+                  "with": "src/app/core/services.prod/invoice-edit.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/movements.service.ts",
+                  "with": "src/app/core/services.prod/movements.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/notifications.service.ts",
+                  "with": "src/app/core/services.prod/notifications.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/visoor-sat.service.ts",
+                  "with": "src/app/core/services.prod/visoor-sat.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/black-list.service.ts",
+                  "with": "src/app/core/services.prod/black-list.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/diot.service.ts",
+                  "with": "src/app/core/services.prod/diot.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/dashboard.service.ts",
+                  "with": "src/app/core/services.prod/dashboard.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/activity-logs.service.ts",
+                  "with": "src/app/core/services.prod/activity-logs.service.prod.ts"
+                }
+              ],
+              "scripts": [],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            },
+            "dev": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                },
+                {
+                  "replace": "src/app/build-specifics/index.ts",
+                  "with": "src/app/build-specifics/index.dev.ts"
+                },
+                {
+                  "replace": "src/app/core/services/profile.service.ts",
+                  "with": "src/app/core/services.prod/profile.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/auth/services/authentication.service.ts",
+                  "with": "src/app/core/auth/services/authentication.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/invoice-edit.service.ts",
+                  "with": "src/app/core/services.prod/invoice-edit.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/movements.service.ts",
+                  "with": "src/app/core/services.prod/movements.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/notifications.service.ts",
+                  "with": "src/app/core/services.prod/notifications.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/visoor-sat.service.ts",
+                  "with": "src/app/core/services.prod/visoor-sat.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/black-list.service.ts",
+                  "with": "src/app/core/services.prod/black-list.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/diot.service.ts",
+                  "with": "src/app/core/services.prod/diot.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/dashboard.service.ts",
+                  "with": "src/app/core/services.prod/dashboard.service.prod.ts"
+                },
+                {
+                  "replace": "src/app/core/services/activity-logs.service.ts",
+                  "with": "src/app/core/services.prod/activity-logs.service.prod.ts"
+                }
+              ]
+            },
+            "sandbox": {
+              "scripts": [],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "visoor:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "visoor:build:production"
+            },
+            "dev": {
+              "browserTarget": "visoor:build:dev"
+            },
+            "sandbox": {
+              "browserTarget": "visoor:build:sandbox"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "visoor:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "visoor"
+}

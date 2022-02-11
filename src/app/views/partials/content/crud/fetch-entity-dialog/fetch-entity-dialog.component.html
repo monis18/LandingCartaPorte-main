@@ -1,0 +1,44 @@
+<div class="kt-portlet">
+  <div class="kt-portlet__head kt-portlet__head__custom">
+    <div class="kt-portlet__head-label">
+      <h3 class="kt-portlet__head-title">{{ data.title }}</h3>
+      <span class="kt-portlet__head-icon kt-hide">
+        <i class="la la-gear"></i>
+      </span>
+    </div>
+  </div>
+  <div class="kt-form kt-form--label-align-right kt-form--group-seperator-dashed">
+    <div class="kt-portlet__body kt-padding-0">
+
+      <div *ngIf="!!data.description"
+        class="kt-portlet__body kt-padding-t-0 kt-padding-b-0 kt-padding-l-15 kt-padding-r-15">
+        <div class="form-group kt-form__group row">
+          <div class="col-lg-12">
+            {{ data.description }}
+          </div>
+        </div>
+      </div>
+
+      <div class="kt-list-timeline kt-list-timeline--skin-light kt-padding-30">
+        <div class="kt-list-timeline__items">
+          <ng-container *ngFor="let item of data.items">
+            <div class="kt-list-timeline__item">
+              <span class="kt-list-timeline__badge kt-list-timeline__badge--{{ item.status }}"></span>
+              <span class="kt-list-timeline__text">{{ item.text }}
+                <span *ngIf="item.badge"
+                  class="kt-badge kt-badge--{{ item.status }} kt-badge--wide">{{ item.badge }}</span>
+              </span>
+              <span *ngIf="item.error" class="kt-list-timeline__text-error">{{ item.error }}</span>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    <div class="kt-portlet__foot kt-portlet__no-border kt-portlet__foot--fit text-right">
+      <div class="kt-form__actions kt-form__actions--sm">
+        <button *ngIf="data.cancelText" mat-button (click)="onNoClick()">{{ data.cancelText }}</button>&nbsp;
+        <button mat-button (click)="onYesClick()" color="primary" cdkFocusInitial>{{ data.confirmText }}</button>
+      </div>
+    </div>
+  </div>
+</div>

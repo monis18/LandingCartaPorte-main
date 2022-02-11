@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Visoor</title>
+  <base href="/">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href=" /assets/media/visoor/icono/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700"
+    rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Open+Sans?query=open+sa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
+
+  <!--Amplitude-->
+  <script type="text/javascript">
+    (function (e, t) {
+      var n = e.amplitude || { _q: [], _iq: {} }; var r = t.createElement("script")
+        ; r.type = "text/javascript"
+        ; r.integrity = "sha384-cukXwabQy+j/QA1+RqiXSzxhgQg5Rrn3zVszlwH3pWj/bXJxlA8Ge7NhcD6vP2Ik"
+        ; r.crossOrigin = "anonymous"; r.async = true
+        ; r.src = "https://cdn.amplitude.com/libs/amplitude-7.1.0-min.gz.js"
+        ; r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK")
+          }
+        }
+        ; var i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i)
+        ; function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0))); return this
+          }
+        }
+      var o = function () { this._q = []; return this }
+        ; var a = ["add", "append", "clearAll", "prepend", "set", "setOnce", "unset"]
+        ; for (var c = 0; c < a.length; c++) { s(o, a[c]) } n.Identify = o; var u = function () {
+          this._q = []
+            ; return this
+        }
+        ; var l = ["setProductId", "setQuantity", "setPrice", "setRevenueType", "setEventProperties"]
+        ; for (var p = 0; p < l.length; p++) { s(u, l[p]) } n.Revenue = u
+        ; var d = ["init", "logEvent", "logRevenue", "setUserId", "setUserProperties", "setOptOut", "setVersionName", "setDomain", "setDeviceId", "enableTracking", "setGlobalUserProperties", "identify", "clearUserProperties", "setGroup", "logRevenueV2", "regenerateDeviceId", "groupIdentify", "onInit", "logEventWithTimestamp", "logEventWithGroups", "setSessionId", "resetSessionId"]
+        ; function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+            }
+          }
+          for (var n = 0; n < d.length; n++) { t(d[n]) }
+        } v(n); n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase()
+            ; if (!n._iq.hasOwnProperty(e)) { n._iq[e] = { _q: [] }; v(n._iq[e]) } return n._iq[e]
+        }
+        ; e.amplitude = n
+    })(window, document);
+
+    amplitude.getInstance().init("36d90ffaef716a01a5193570b169f972", null, {
+      // optional
+      saveEvents: true,
+      includeUtm: true,
+      includeReferrer: true,
+      saveParamsReferrerOnce: false
+    });
+  </script>
+  <script>
+    environmentType = '';
+  </script>
+
+  <script src="assets/js/global/components/base/util.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/header.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/menu.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/offcanvas.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/scrolltop.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/toggle.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/dialog.js" type="application/javascript"></script>
+  <script src="assets/js/global/components/base/wizard.js" type="application/javascript"></script>
+
+  <!-- Google Analytics  -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })
+      (window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-56917209-1', { 'alwaysSendReferrer': true }); ga('send', 'pageview');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '333931951192193');
+    fbq('track', 'PageView');
+  </script>
+
+  <!--Intercom-->
+  <script>
+    //Set your APP_ID
+    var APP_ID = "wwdeuelz";
+
+    window.intercomSettings = {
+      app_id: APP_ID
+    };
+  </script>
+  <script>
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/' + APP_ID; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=333931951192193&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5G44XDK');</script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body kt-root></body>
+
+</html>

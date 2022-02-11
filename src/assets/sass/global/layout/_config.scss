@@ -1,0 +1,96 @@
+//
+// Layout Config
+// Here you can set the demo level SASS variables and override the global variables for this demo.
+// Note: To override the global variables in the demo level use the variables without "!default". More info:  https://sass-lang.com/documentation/variables
+//
+
+// State colors
+// Metronic states
+// Bootstrap states
+$kt-state-colors: (
+  brand: (
+    base: #4ac1e0,
+    active: #4da8d2,
+    inverse: #ffffff,
+  ),
+  brand2: (
+    base: #243746,
+    inverse: #ffffff,
+  ),
+  light: (
+    base: #ffffff,
+    inverse: #282a3c,
+  ),
+  dark: (
+    base: #282a3c,
+    inverse: #ffffff,
+  ),
+  primary: (
+    base: #5867dd,
+    inverse: #ffffff,
+  ),
+  success: (
+    base: #1dc9b7,
+    inverse: #ffffff,
+  ),
+  info: (
+    base: #5578eb,
+    inverse: #ffffff,
+  ),
+  warning: (
+    base: #ffb822,
+    inverse: #111111,
+  ),
+  danger: (
+    base: #e0464e,
+    inverse: #ffffff,
+  ),
+  ingresos: (
+    base: #4ac1e0,
+    inverse: #ffffff,
+  ),
+  egresos: (
+    base: #5969ad,
+    inverse: #ffffff,
+  ),
+  cobrado: (
+    base: #006eff,
+    inverse: #ffffff,
+  ),
+  pagado: (
+    base: #00decd,
+    inverse: #ffffff,
+  ),
+  cancelado: (
+    base: #5969ad,
+    inverse: #ffffff,
+  ),
+  undefined: (
+    base: #243746,
+    inverse: #ffffff,
+  ),
+  download: (
+    base: #649ced,
+    inverse: #ffffff,
+  ),
+);
+
+// Layout
+$kt-aside-default-width: 140px;
+$kt-aside-minimize-width: 78px;
+$kt-aside-offcanvas-width: 255px;
+
+// Page padding
+$kt-page-padding: (
+  desktop: 25px,
+  mobile: 15px,
+);
+
+// Page container
+$kt-page-container-width: 1380px; //  fixed page width
+
+// Content bg color
+$kt-content-bg-color: #f2f3f8;
+
+// Aside bg color
+$kt-aside-bg-color: #1e1e2d;

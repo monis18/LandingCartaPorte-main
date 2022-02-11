@@ -1,0 +1,18 @@
+.kt-header__title,
+.kt-header-mobile__title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kt-header-mobile__title {
+  padding-top: 10px;
+  color: kt-get($kt-layout-colors, header, mobile-title);
+}
+
+@include kt-tablet-and-mobile() {
+  .kt-header__title {
+    display: none;
+  }
+}

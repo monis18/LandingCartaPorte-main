@@ -1,0 +1,635 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G44XDK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<div class="contenedor color-background-base">
+  <div class="header">
+    <div>
+      <img src="../../../../assets/media/visoor/logo/headerLogo.png" alt="">
+    </div>
+    <div class="sections font-poppins color-dark">
+    </div>
+  </div>
+  <div class="header--movil">
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    <img src="../../../../../assets/media/visoor/logo/LOGO_MENU.png" alt="">
+  </div>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav style="position: fixed;">
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" mat-list-item>Cerrar</a>
+        <a (click)="scroll(funciones,''); sidenav.toggle()" mat-list-item>Funciones</a>
+        <a (click)="scroll(paquetes,'');sidenav.toggle()" mat-list-item>Paquetes</a>
+        <a (click)="scroll(registro,'');sidenav.toggle()" mat-list-item>¿Cómo hacerlo?</a>
+        <a (click)="scroll(contacto,'');sidenav.toggle()" mat-list-item>Contacto</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+  <!-- Inicio   -->
+
+  <div #registro class="columDoble kt-margin-t-100">
+    <div class="columDoble-container">
+      <div class="process font-poppins kt-align-left kt-font-bolder kt-margin-t-30 kt-margin-b-90">
+        <h2 class="color-body-text2">¡Genera tu Carta Porte </h2>
+        <h1 class="color-body-title animationH1">en minutos!</h1>
+        <!-- Borrar -->
+        <!-- <img class="img-fluid kt-margin-t-30" src="../../../../assets/media/visoor/images/Recurso15.png" alt=""> -->
+        <div class="color-body-text2 kt-font-xl kt-margin-t-30">
+          <span>
+            Emite tus CFDI de Ingresos y Traslados
+          </span><br>
+          <span>
+            con el complemento Carta Porte desde
+          </span><br>
+          <span>
+            la App de Visoor.
+          </span>
+        </div>
+        <div class="kt-margin-t-20 kt-margin-b-40">
+          <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15" (click)="register()">¡Haz
+            tu prueba gratuita!</button>
+        </div>
+      </div>
+      <div class="columDoble-image">
+        <img src="../../../../assets/media/visoor/gif/Camino.gif" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- fin de modificacion  1ra seccion-->
+  
+  <!-- Inicio modificacion 5 pasos  -->
+
+
+  <div #registro class="steps kt-margin-t-100">
+    <div class="steps-container">
+      <div class="steps-image">
+        <img src="../../../../assets/media/visoor/images/Recurso22.png" alt="">
+      </div>
+      <div class="steps-pasos">
+        <div class="kt-margin-b-10">
+          <h2 class="font-poppins kt-font-bolder color-body-text kt-margin-b-15">
+            <span>Comienza tu camino</span><br>
+            <span>en Visoor</span>
+          </h2>
+        </div>
+        <div class="kt-margin-b-20">
+          <div class="steps-title font-poppins color-body-subtitle kt-font-bolder Kt-animationrightSm">
+            <h1 class="font-poppins">1</h1>
+            <span class="font-size-22">
+              <span>Regístrate y</span><br>
+              <span>autoconfigura tu cuenta</span>
+            </span>
+          </div>
+          <div class="steps-desc color-dark font-oppensans kt-margin-l-5 Kt-animationrightSm">
+            Con tu clave CIEC o FIEL darás de alta tu cuenta en cuestión de minutos.
+          </div>
+          <div style="position: relative;">
+            <img src="../../../../assets/media/visoor/images/Recurso23.png" alt=""
+              style="position: absolute; top: -165px; right: -70px;">
+          </div>
+        </div>
+        <div class="kt-margin-b-20 Kt-animationrightSm">
+          <div class="steps-title font-poppins color-body-subtitle kt-font-bolder">
+            <h1 class="font-poppins">2</h1>
+            <span class="font-size-22">
+              <span>Accede a una</span><br>
+              <span>asesoría personalizada</span>
+            </span>
+          </div>
+          <div class="steps-desc color-dark font-oppensans kt-margin-l-5">
+            Comparte cualquier duda o aclaración con el equipo de soporte de Visoor.
+          </div>
+        </div>
+        <div class="kt-margin-b-20 Kt-animationrightSm">
+          <div class="steps-title font-poppins color-body-subtitle kt-font-bolder">
+            <h1 class="font-poppins">3</h1>
+            <span class="font-size-22">
+              <span>Recibe contenido</span><br>
+              <span>de conocimiento</span>
+            </span>
+          </div>
+          <div class="steps-desc color-dark font-oppensans kt-margin-l-5">
+            Saca el máximo potencial de Visoor mediante diversos canales de información.
+          </div>
+        </div>
+        <div class="kt-margin-b-40 Kt-animationrightSm">
+          <div class="steps-title font-poppins color-body-subtitle kt-font-bolder">
+            <h1 class="font-poppins">4</h1>
+            <span class="font-size-22">
+              <span>¡Comienza a</span><br>
+              <span>digitalizar tu administración!</span>
+            </span>
+          </div>
+          <div class="steps-desc color-dark font-oppensans kt-margin-l-5">
+            Hoy puedes darle un giro a tu manera de llevar la contabilidad con una Prueba Gratuita
+          </div>
+        </div>
+        <div class="steps-footer kt-margin-t-20 kt-margin-b-50">
+          <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-16"
+            (click)="register()">¡Haz tu prueba
+            gratuita!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Final modificacion 5 pasos -->
+
+  <div #funciones class="info font-poppins kt-align-center">
+    <div class="info-title kt-margin-b-30">
+      <h1 class="color-body-subtitle font-size-30 font-poppins kt-font-bolder animationH1SN">Lleva el control de tus cuentas sin
+        complicaciones</h1>
+    </div>
+    <div class="info-items">
+      <div class="info-items-item">
+        <div class="text kt-align-left">
+          <div class="color-body-subtitle font-size-20 kt-font-bolder kt-margin-b-10">
+            <span>Maneja tu</span><br>
+            <span>contabilidad facilmente</span>
+          </div>
+          <div class="description font-oppensans kt-font-bolder font-size-15">
+            Lleva el registro de tus ingresos, así como el de tus gastos por mes y por año.
+          </div>
+        </div>
+        <div class="img-desc img-fluid">
+          <img class="recurso2" src="../../../../assets/media/visoor/images/Recurso16.png" alt="">
+        </div>
+      </div>
+      <div class="info-items-item">
+        <div class="text kt-align-left">
+          <div class="color-body-subtitle font-size-20 kt-font-bolder kt-margin-b-10">
+            Factura a tus clientes rápidamente</div>
+          <div class="description font-oppensans kt-font-bolder font-size-15">
+            Genera las facturas y notas de crédito que necesites desde donde lo desees.
+          </div>
+        </div>
+        <div class="img-desc img-fluid">
+          <img class="recurso3" src="../../../../assets/media/visoor/images/Recurso17.png" alt="">
+        </div>
+      </div>
+      <div class="info-items-item">
+        <div class="text kt-align-left">
+          <div class="color-body-subtitle font-size-20 kt-font-bolder kt-margin-b-10 kt-padding-r-30">
+            <span>Transparenta tus</span><br>
+            <span>pagos en minutos</span>
+          </div>
+          <div class="description font-oppensans kt-font-bolder font-size-15">
+            Refleja rápidamente los pagos de tus clientes ante el SAT gracias a la conexión directa con Visoor.
+          </div>
+        </div>
+        <div class="img-desc img-fluid">
+          <img class="img-desc-reverse recurso4" src="../../../../assets/media/visoor/images/Recurso18.png" alt="">
+        </div>
+      </div>
+      <div class="info-items-item">
+        <div class="text kt-align-left">
+          <div class="color-body-subtitle font-size-20 kt-font-bolder kt-margin-b-10 kt-padding-r-20">
+            Almacena toda tu información en la nube</div>
+          <div class="description font-oppensans kt-font-bolder font-size-15">
+            No es necesario que subas tu información cada vez que realices movimientos, guarda todo en Visoor.
+          </div>
+        </div>
+        <div class="img-desc img-fluid">
+          <img class="img-desc-reverse recurso5" src="../../../../assets/media/visoor/images/Recurso19.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="kt-margin-t-20 kt-margin-b-40">
+      <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15" (click)="register()">¡Haz
+        tu prueba
+        gratuita!</button>
+    </div>
+  </div>
+  <div class="info2 kt-margin-t-100 kt-margin-b-40">
+    <div class="info2-items">
+      <div class="info2-items-item">
+        <div class="image kt-align-center">
+          <img src="../../../../assets/media/visoor/images/Recurso20.png" alt="">
+        </div>
+        <div class="text">
+          <div class="color-body-subtitle font-size-27 kt-font-bolder kt-margin-b-10 font-poppins">
+            <span>Seguridad de</span><br>
+            <span>tu información</span>
+          </div>
+          <div class="description font-oppensans kt-font-bolder font-size-16 kt-margin-r-60">
+            Con Visoor tendrás la confianza de almacenar tus datos en la nube, ya que contamos con uno de los mejores
+            servidores del mercado.
+          </div>
+          <div class="kt-margin-t-20">
+            <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+              (click)="register()">
+              <span class="kt-margin-r-15 kt-margin-l-15">
+                ¡Haz tu prueba gratuita!
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="info2-items-item">
+        <div class="image kt-align-center">
+          <img src="../../../../assets/media/visoor/images/Recurso21.png" alt="">
+        </div>
+        <div class="text">
+          <div class="color-body-subtitle font-size-27 kt-font-bolder kt-margin-b-10 font-poppins">
+            <span>Automatiza</span><br>
+            <span>Tus facturas</span>
+          </div>
+          <div class="description font-oppensans kt-font-bolder font-size-16 kt-margin-r-60">
+            Configura Visoor para que se generen automáticamente las facturas que necesitas recurrentemente por tus
+            servicios.
+          </div>
+          <div class="kt-margin-t-20">
+            <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+              (click)="register()">
+              <span class="kt-margin-r-15 kt-margin-l-15">
+                ¡Haz tu prueba gratuita!
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div #paquetes class="planes kt-margin-t-100">
+    <div class="planes-title">
+      <h1 class="color-body-subtitle font-size-30 font-poppins kt-font-bolder animationH1SN">Suscripción mensual o anual</h1>
+      
+    </div>
+    <div class="planes-title">
+      <div class="toggle">
+        <input type="radio" name="sizeBy" value="weight" id="sizeWeight" checked="checked" (click)="CheckSelectAnual($event)" />
+        <label for="sizeWeight" class="fontrb" >Anual</label>
+        <input type="radio" name="sizeBy" (click)="CheckSelectMes($event)" value="dimensions" id="sizeDimensions" />
+        <label for="sizeDimensions" class="fontrb">Mensual</label>
+      </div> 
+    </div>
+    <div class="planes-title marlefahoo">
+      <span>Ahorra más del 18%</span>
+    </div>
+    <div class="planes-items">
+      <div class="planes-items-item">
+        <div class="kt-align-center list">
+          <div class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-20">
+            Ejecutivo
+          </div>
+          <div class="font-oppensans kt-font-bolder">
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('DB')">Dashboard</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('MV')">Movimientos</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('VS')">Visoor-SAT</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('FA')">Faq. Elctrónica</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('LN')">Listas Negras</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('MU')">Multiusuarios</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('BC')">Bancos</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('NM')">Nomina</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('DT')">Diot</span>
+            </div>
+          </div>
+          <div class="planes-items-item-footer">
+            <div class="kt-align-center Mes hiddenpay">
+              <span class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-10">
+                $399
+              </span>
+              <span class="font-oppensans kt-font-bolder color-dark">mensual</span>
+              <div class="kt-margin-t-15">
+                <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+                  (click)="register()">
+                  <span class="kt-margin-r-5 kt-margin-l-5">
+                    ¡Haz tu prueba gratuita!
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="kt-align-center Anual">
+              <span class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-10">
+                $3,900
+              </span>
+              <span class="font-oppensans kt-font-bolder color-dark">anual</span><br>
+              <div class="kt-margin-t-15">
+                <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+                  (click)="register()">
+                  <span class="kt-margin-r-5 kt-margin-l-5">
+                    ¡Haz tu prueba gratuita!
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="planes-items-item">
+        <div class="kt-align-center list">
+          <div class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-20">
+            Empresarial
+          </div>
+          <div class="font-oppensans kt-font-bolder">
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('DB')">Dashboard</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('MV')">Movimientos</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('VS')">Visoor-SAT</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('FA')">Faq. Elctrónica</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('LN')">Listas Negras</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('MU')">Multiusuarios</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbt" (click)="openDialog('MR')">Multi-rfcs</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('BN')">Bancos</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('NM')">Nomina</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('DT')">Diot</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbtdos" (click)="openDialog('DC')">32D</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbttes" (click)="openDialog('DA')">Descarga Automática</span>
+            </div>
+            <div class="content">
+              <div class="kt-padding-r-5">
+                <img class="img-fluid kt-pull-right" src="../../../../assets/media/visoor/images/check.png" alt="">
+              </div>
+              <span class="kt-align-left Linkbttes" (click)="openDialog('RP')">Reportes Personalizados</span>
+            </div>
+          </div>
+          <div class="planes-items-item-footer">
+            <div class="kt-align-center Mes hiddenpay">
+              <span class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-10">
+                $599
+              </span>
+              <span class="font-oppensans kt-font-bolder color-dark">mensual</span><br>
+              <div class="kt-margin-t-15">
+                <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+                  (click)="register()">
+                  <span class="kt-margin-r-5 kt-margin-l-5">
+                    ¡Haz tu prueba gratuita!
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="kt-align-center Anual">
+              <span class="color-body-subtitle font-poppins font-size-26 kt-font-bolder kt-margin-b-10">
+                $5,900
+              </span>
+              <span class="font-oppensans kt-font-bolder color-dark">anual</span><br>
+              <div class="kt-margin-t-15">
+                <button mat-flat-button class="button-prueba font-poppins color-body-base font-size-15"
+                  (click)="register()">
+                  <span class="kt-margin-r-5 kt-margin-l-5">
+                    ¡Haz tu prueba gratuita!
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="opiniones font-poppins kt-margin-b-20">
+    <div class="opiniones-title kt-align-center kt-font-bolder font-size-20 kt-margin-b-30">
+      Forma parte de grandes historias de éxito
+    </div>
+    <div class="opiniones-grid">
+      <div class="comillas">
+        <img class="comillas-left" src="../../../../assets/media/visoor/images/Recurso9.png" alt="" style="top: -50px">
+      </div>
+      <div class="kt-font-bolder font-size-26 kt-align-center">Visoor y su equipo de Soporte han sido clave para
+        digitalizar mis
+        servicios y administrar a varios usuarios
+        con los que cuento. Siempre he tenido su apoyo.</div>
+      <div class="comillas kt-margin-l-20">
+        <img src="../../../../assets/media/visoor/images/Recurso10.png" alt="" style="bottom: -50px">
+      </div>
+    </div>
+    <div class="kt-align-center kt-font-bolder font-size-20 kt-margin-b-20">
+      C.P. Higinio Pacheco
+    </div>
+  </div> -->
+  <div>
+    <ngb-carousel #carousel [interval]="8000" [pauseOnHover]="pauseOnHover" [showNavigationIndicators]="false"
+      (slide)="onSlide($event)">
+      <ng-template ngbSlide *ngFor="let testimonio of testimonios; index as i">
+        <ng-container [ngTemplateOutlet]="opinions" [ngTemplateOutletContext]="{testimonio:testimonio}"></ng-container>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <div #contacto class="contacto">
+    <div class="text kt-pl80 kt-pr80 Kt-altext">
+      <div class="kt-margin-b-30">
+        <img src="../../../../assets/media/visoor/images/Recurso8.png" alt="">
+      </div>
+      <div class="color-body-text font-poppins kt-margin-l-20">
+        <p class="kt-margin-b-5">Lic Miguel de la Madrid Hurtado 1961-Interior 10, Aguascaientes, Ags.</p>
+        <p class="kt-margin-b-5">Tel: (800) 4610110</p>
+        <p class="kt-margin-b-5">Email: soporte@visoor.mx</p>
+        <p class="kt-margin-b-5">Lunes - Viernes: 9:00 a.m - 6:00 p.m</p>
+      </div>
+    </div>
+    <div class="text kt-pl80 kt-pr80">
+      <div class="color-body-subtitle font-poppins font-size-29 kt-font-bolder kt-margin-b-15">Conversa con nosotros
+      </div>
+      <div class="font-oppensans color-dark font-size-16 max">
+        Si tienes dudas de cómo dar el primer paso para digitalizar tu administración, estás en el lugar correcto.
+        Regístrate y un especialista te compartirá algunos tips:
+      </div>
+      <div>
+        <form [formGroup]="formContacto">
+          <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Correo</mat-label>
+            <input matInput type="email" formControlName="correo">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Necesidad</mat-label>
+            <textarea matInput formControlName="necesidad" placeholder="Pregúntanos algo..."></textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>WhatsApp</mat-label>
+            <input matInput type="tel" formControlName="whatsapp" maxlength="10">
+          </mat-form-field>
+          <div class="kt-margin-t-10 kt-margin-b-20">
+            <button mat-flat-button
+              class="button-prueba font-poppins font-poppins color-body-base font-size-17 kt-margin-r-20"
+              (click)="contact()" [disabled]="send" style="min-width: 130px; min-height: 36px;">
+              <div *ngIf="!(send$ | async) && !(loading$ | async) && !send" class="kt-margin-r-20 kt-margin-l-20">Enviar
+              </div>
+              <div *ngIf="send" class="kt-margin-r-20 kt-margin-l-20">Enviado</div>
+              <!-- <mat-spinner *ngIf="(loading$ | async)" class="example-margin" style="margin:0 auto;" [diameter]="20"></mat-spinner> -->
+              <span class="spinner-diff" *ngIf="(loading$ | async)">
+                <mat-spinner class="example-margin" style="margin:0 auto;" [diameter]="20"></mat-spinner>
+              </span>
+            </button>
+            <span *ngIf="error$ | async">¡Debes llenar todos los campos!</span>
+            <span *ngIf="send$ | async">¡Gracias por contactarnos!</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.0675394457216!2d-102.32311981509928!3d21.931954847500638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429eefcc9587577%3A0x3b3f183d0f4667b3!2sVisoor!5e0!3m2!1ses-419!2smx!4v1634242136125!5m2!1ses-419!2smx"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="footer">
+    <div></div>
+    <div class="footer-content">
+      <div class="kt-margin-b-20">
+        <img src="../../../../assets/media/visoor/logo/Footer-LOGO.png" alt="">
+      </div>
+      <div class="font-oppensans kt-margin-b-20">
+        Mejoramos la facturación con nuestras herramientas, prueba esta increíble experiencia.
+      </div>
+      <div>
+        <a href="https://www.facebook.com/visoor"><i
+            class="fab fa-facebook-f kt-margin-l-10 kt-margin-r-10 font-size-20"></i></a>
+        <a href="https://www.instagram.com/visoor_mx/">
+          <i class="fab fa-instagram kt-margin-r-10 font-size-20"></i>
+        </a>
+        <a href="https://twitter.com/visoormx?fbclid=IwAR3z6iZ2fl2HifKiBto7LjOafVijeJuf78vB9wz_akYJV1oetC2X9RxWbVo"><i
+            class="fab fa-twitter kt-margin-r-10 font-size-20"></i></a>
+        <a href="https://www.linkedin.com/company/visoor/"><i
+            class="fab fa-linkedin-in kt-margin-r-10 font-size-20"></i></a>
+      </div>
+      <div class="footer-absolute">
+        <p>2020-21 Diseñado con amor por Visoor.</p>
+      </div>
+    </div>
+    <div></div>
+    <div class="footer-content">
+      <div class="font-size-22 kt-margin-b-25">Navegación</div>
+      <div>
+        <p class="font-size-18 cursor">Inicio</p>
+        <p class="font-size-18 cursor" (click)="scroll(funciones, '')">Funciones</p>
+        <p class="font-size-18 cursor" (click)="scroll(paquetes, '')">Paquetes</p>
+        <p class="font-size-18 cursor" (click)="scroll(registro, '')">¿Cómo hacerlo?</p>
+        <p class="font-size-18 cursor" (click)="scroll(contacto, '')">Contacto</p>
+      </div>
+    </div>
+    <div></div>
+
+  </div>
+
+</div>
+
+<ng-template #opinions let-testimonio="testimonio">
+  <div class="opiniones font-poppins kt-margin-b-20">
+    <div class="opiniones-title kt-align-center kt-font-bolder font-size-20 kt-margin-b-30">
+      Forma parte de grandes historias de éxito
+    </div>
+    <div class="opiniones-grid">
+      <div class="comillas">
+        <img class="comillas-left" src="../../../../assets/media/visoor/images/Recurso9.png" alt="" style="top: -50px">
+      </div>
+      <div class="kt-font-bolder font-size-26 kt-align-center">
+        {{testimonio.message}}</div>
+      <div class="comillas kt-margin-l-20">
+        <img src="../../../../assets/media/visoor/images/Recurso10.png" alt="" style="bottom: -50px">
+      </div>
+    </div>
+    <div class="kt-align-center kt-font-bolder font-size-20 kt-margin-b-20">
+      {{testimonio.from}}
+    </div>
+  </div>
+</ng-template>

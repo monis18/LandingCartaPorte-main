@@ -1,0 +1,342 @@
+//
+// Global Config
+//
+
+// Init global functions and mixins
+@import "global/init";
+
+// Layout Breakpoints(bootstrap responsive breakpoints)
+// Define the minimum and maximum dimensions at which your layout will change, adapting to different screen sizes, for use in media queries.
+$kt-media-breakpoints: (
+  // Extra small screen / phone
+    xs: 0,
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 1024px,
+  //1024px,
+    // Extra large screen / wide desktop
+    xl: 1399px
+) !default;
+
+// Global rounded border mode
+$kt-rounded: true !default;
+
+// Border Radius
+$kt-border-radius: 4px !default;
+
+// Core icon codes(lineawesome icons: https://icons8.com/line-awesome)
+$kt-action-icons: (
+  close: "\f191",
+  down: "\f110",
+  up: "\f113",
+  left: "\f111",
+  right: "\f112",
+  plus: "\f2c2",
+  minus: "\f28e",
+) !default;
+
+// Core bold icon codes(lineawesome icons: https://keenthemes.com/metronic/preview/default/components/icons/flaticon.html)
+$kt-action-bold-icons: (
+  down: "\f1a3",
+  up: "\f1a5",
+  left: "\f1a4",
+  right: "\f19d",
+  close: "\f1b2",
+) !default;
+
+// Elevate shadow
+$kt-elevate-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05) !default;
+$kt-elevate-shadow-2: 0px 0px 13px 0px rgba(82, 63, 105, 0.1) !default;
+
+// Dropdown shadow
+$kt-dropdown-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15) !default;
+
+// Custom scrollbar color
+$kt-scroll-color: darken(#ebedf2, 6%) !default;
+
+// Transition
+$kt-transition: all 0.3s !default;
+
+// Modal Z-index
+$kt-modal-zindex: 1050 !default;
+
+// dropdown Z-index
+$kt-dropdown-zindex: 95 !default;
+
+// State Color
+$kt-state-colors: (
+  brand: (
+    base: #4ac1e0,
+    active: #4da8d2,
+    inverse: #ffffff,
+  ),
+  brand2: (
+    base: #243746,
+    inverse: #ffffff,
+  ),
+  light: (
+    base: #ffffff,
+    inverse: #282a3c,
+  ),
+  dark: (
+    base: #282a3c,
+    inverse: #ffffff,
+  ),
+  primary: (
+    base: #5867dd,
+    inverse: #ffffff,
+  ),
+  primary-selected: (
+    base: #1c98b5,
+    inverse: #ffffff,
+  ),
+  secondary: (
+    base: #2a3643,
+    inverse: #ffffff,
+  ),
+  secondary-selected: (
+    base: #2a3643,
+    inverse: #ffffff,
+  ),
+  success: (
+    base: #1dc9b7,
+    inverse: #ffffff,
+  ),
+  info: (
+    base: #5578eb,
+    inverse: #ffffff,
+  ),
+  warning: (
+    base: #ffb822,
+    inverse: #111111,
+  ),
+  danger: (
+    base: #e0464e,
+    inverse: #ffffff,
+  ),
+  ingresos: (
+    base: #4ac1e0,
+    inverse: #ffffff,
+  ),
+  egresos: (
+    base: #5969ad,
+    inverse: #ffffff,
+  ),
+  cobrado: (
+    base: #006eff,
+    inverse: #ffffff,
+  ),
+  pagado: (
+    base: #00decd,
+    inverse: #ffffff,
+  ),
+  cancelado: (
+    base: #5969ad,
+    inverse: #ffffff,
+  ),
+  undefined: (
+    base: #243746,
+    inverse: #ffffff,
+  ),
+  download: (
+    base: #649ced,
+    inverse: #ffffff,
+  ),
+) !default;
+
+$kt-layout-colors: (
+  header: (
+    bg: #f9f9f9,
+    selected: #243746,
+    selected-btn: #cdeff7,
+    icon: #4ac1e0,
+    mobile-title: #f9f9f9,
+  ),
+  sidebar: (
+    bg: #f9f9f9,
+    selected: #243746,
+    selected-btn: #cdeff7,
+    selected-icon: #4ac1e0,
+    icon: #4ac1e0,
+  ),
+  status: (
+    vigente: (
+      base: #4ac1e0,
+      inverse: #ffffff,
+    ),
+    pagado: (
+      base: #00decd,
+      inverse: #ffffff,
+    ),
+    cobrado: (
+      base: #006eff,
+      inverse: #ffffff,
+    ),
+    deducible: (
+      base: #5cc1ff,
+      inverse: #ffffff,
+    ),
+    cancelacion: (
+      base: #8693cc,
+      inverse: #ffffff,
+    ),
+    en-proceso: (
+      base: #243746,
+      inverse: #ffffff,
+    ),
+    cancelado: (
+      base: #5969ad,
+      inverse: #ffffff,
+    ),
+  ),
+);
+
+// Base colors
+$kt-base-colors: (
+  label: (
+    1: #a2a5b9,
+    2: #74788d,
+    3: #595d6e,
+    4: #48465b,
+  ),
+  shape: (
+    1: #f0f3ff,
+    2: #e8ecfa,
+    3: #93a2dd,
+    4: #646c9a,
+  ),
+  grey: (
+    1: #f7f8fa,
+    2: #ebedf2,
+    3: darken(#ebedf2, 3%),
+    4: darken(#ebedf2, 6%),
+  ),
+) !default;
+
+// Social network colors(see: https://brandcolors.net/)
+$kt-social-colors: (
+  facebook: (
+    base: #3b5998,
+    inverse: #ffffff,
+  ),
+  google: (
+    base: #dc4e41,
+    inverse: #ffffff,
+  ),
+  twitter: (
+    base: #4ab3f4,
+    inverse: #ffffff,
+  ),
+  instagram: (
+    base: #517fa4,
+    inverse: #ffffff,
+  ),
+  youtube: (
+    base: #b31217,
+    inverse: #ffffff,
+  ),
+  linkedin: (
+    base: #0077b5,
+    inverse: #ffffff,
+  ),
+  skype: (
+    base: #00aff0,
+    inverse: #ffffff,
+  ),
+) !default;
+
+// Root Font Settings
+$kt-font-families: (
+  regular: unquote("aeonikregular, Poppins, Helvetica, sans-serif"),
+  heading: unquote("aeonikbold, Poppins, Helvetica, sans-serif"),
+) !default;
+
+// Root Font Settings
+$kt-font-size: (
+  size: (
+    desktop: 13px,
+    tablet: 12px,
+    mobile: 12px,
+  ),
+  weight: 300,
+) !default;
+
+// General Link Settings
+$kt-font-color: (
+  text: #666666,
+  link: (
+    default: kt-state-color(brand),
+    hover: darken(kt-state-color(brand), 6%),
+  ),
+) !default;
+
+$kt-table: (
+  title: (
+    color: #000000,
+    font: unquote("aeonikregular, Poppins, Helvetica, sans-serif"),
+    font-size: 14,
+  ),
+  header: (
+    color: #8998af,
+    font: unquote("sans-serif, Poppins, Helvetica"),
+    font-size: 14,
+    bg: #ffffff,
+    bg-hover: #ffffff,
+  ),
+  body: (
+    color: #8998af,
+    color-hover: #000000,
+    font: unquote("sans-serif, Poppins, Helvetica"),
+    font-size: 11,
+    bg: #ffffff,
+    bg-hover: rgba(137, 152, 175, 0.2),
+  ),
+) !default;
+
+// Portlet settings
+$kt-portlet: (
+  min-height: (
+    default: (
+      desktop: 60px,
+      mobile: 50px,
+    ),
+    sm: (
+      desktop: 50px,
+      mobile: 40px,
+    ),
+    lg: (
+      desktop: 80px,
+      mobile: 60px,
+    ),
+    xl: (
+      desktop: 100px,
+      mobile: 80px,
+    ),
+  ),
+  space: (
+    desktop: 25px,
+    mobile: 15px,
+  ),
+  bottom-space: (
+    desktop: 20px,
+    mobile: 20px,
+  ),
+  border-color: kt-base-color(grey, 2),
+  bg-color: #ffffff,
+  shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05),
+) !default;
+
+// Page padding
+$kt-page-padding: (
+  desktop: 25px,
+  mobile: 15px,
+) !default;
+
+// Page container width
+$kt-page-container-width: 1380px !default;
+
+// Custom Scroll(Perfect Scrollbar) size
+$kt-custom-scroll-size: 4px !default;

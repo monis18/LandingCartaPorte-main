@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~material-design-icons/iconfont/material-icons.css';
+
+// hide bootstrap dropdown arrow globally
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.mat-table__wrapper--dashboard .mat-table {
+  min-width: 600px !important;
+  width: 100% !important;
+}
+
+.position-static {
+  position: static;
+}
+
+mat-button-toggle-group.sticky .mat-button-toggle-label-content {
+  line-height: 36px;
+}
+
+.mat-column-checkbox {
+  flex: 0 0 68px;
+  text-align: left !important;
+}
+
+.mat-checkbox-label {
+  white-space: normal;
+}
+
+.material-icons.kt-menu__link-icon {
+  font-size: 36px !important;
+}
+
+mat-icon.outlined {
+  font-family: 'Material Icons Outlined';
+}
+
+kt-topbar mat-icon.outlined {
+  font-size: 22px !important;
+}
+
+html,
+body {
+  min-height: 100%;
+}
